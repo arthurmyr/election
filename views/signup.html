@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Election 2017</title>
+    <link rel="stylesheet" type="text/css" href="/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <link rel="icon" type="image/png" href="img/favicon.png">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="/signup">Signup</a></li>
+          <li><a href="/vote">Vote</a></li>
+          <li><a href="/chart">Chart</a></li>
+        </ul>
+        <h1>Election 2017</h1>
+      </nav>
+    </header>
+
+
+    <div id="main-container">
+      <div id="main-inner">
+        <div class="block-container" id="signup">
+          <h2>Sign Up</h2>
+          <form id="signup-form">
+            <div>
+              <div class="on-left">
+                <label for="signup-firstname">Firstname</label>
+                <input type="text" name="firstname" id="signup-firstname">
+              </div>
+              <div class="on-right">
+                <label for="signup-lastname">Lastname</label>
+                <input type="text" name="lastname" id="signup-lastname">
+              </div>
+            </div>
+            <div>
+              <div class="on-left">
+                <label for="signup-age">Age</label>
+                <input type="number" name="age" id="signup-age">
+              </div>
+              <div class="on-right">
+                <label for="signup-adress">Adress</label>
+                <input type="text" name="adress" id="signup-adress">
+              </div>
+            </div>
+            <div class="on-left">
+              <label for="signup-email">Email</label>
+              <input type="email" name="email" id="signup-email">
+            </div>
+            <button class="btn" type="button">Confirm</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.bundle.min.js"></script>
+    <script src="js/tools.js"></script>
+    <script src="js/election.js"></script>
+  </body>
+</html>

@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700');
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+body > header {
+  position: relative;
+  height: 50px;
+  text-align: center;
+  background-color: #816BE8;
+  background: linear-gradient(to right, #7763D6, #2887F9, #8B73FA);
+}
+nav ul {
+  position: absolute;
+  margin-left: 10%;
+}
+nav li {
+  float: left;
+  height: 50px;
+  line-height: 50px;
+  color: white;
+}
+nav li a {
+  display: block;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+  -webkit-transition: background-color 0.5s;
+  transition: background-color 0.5s;
+}
+nav li a:hover {
+  background-color: rgba(145, 145, 145, 0.7);
+}
+nav li:nth-child(-n+2) a {
+  border-right: 1px solid rgb(94, 94, 94);
+}
+h1 {
+  line-height: 50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+}
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+input, select {
+  height: 22px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  padding: 10px;
+  border: none;
+}
+label {
+  display: inline-block;
+  width: 70px;
+}
+.clearfix {
+  clear: both;
+}
+.block-container {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid grey;
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+}
+#main-container {
+  padding-left: 10%;
+  padding-right: 10%;
+  height: calc(100% - 90px);
+}
+#main-inner {
+  background-color: #E5E5E5;
+  padding-top: 40px;
+  height: 100%;
+}
+.btn {
+  display: block;
+  margin-top: 10px;
+  background-color: #8a8481;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: inherit;
+  box-shadow: 1px 1px 2px 1px #616564
+}
+.btn:active {
+  background-color: #787371;
+  box-shadow: 1px 1px 2px 0px #4c504f
+}
+
+
+#vote-form div:nth-child(1){
+  margin-bottom: 20px;
+  position: relative;
+  left: 9px;
+}
+#vote-form div:nth-child(2){
+  position: relative;
+  left: -15px;
+}
+#vote-form div {
+  text-align: center;
+}
+#vote-form label {
+  width: 100px;
+}
+#vote-form button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+}
+
+
+#signup-form > div {
+  margin-bottom: 20px;
+}
+#signup-form .on-right {
+  float: right;
+  margin-right: 10px;
+}
+#signup-form .on-left {
+  display: inline-block;
+  margin-left: 10px;
+}
+#signup-form button {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#voteThumbnail > div {
+  display: inline-block;
+  width: 33.33%;
+  margin-bottom: 20px;
+}
+#voteThumbnail .thumbnail {
+  width: 100%;
+  display: block;
+}
+#voteThumbnail .stats {
+  background-color: yellow;
+}
+/*#voteThumbnail .stats:nth {*/
