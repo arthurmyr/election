@@ -1,11 +1,12 @@
-var express = require('express');
+var express = require('express'),
+    port = 1316;
 
 module.exports = {
   server: null,
   init: function(){
     var app = express();
-    app.listen(3000, function(){
-      console.log('listening on *3000');
+    app.listen(port, function(){
+      console.log('listening on *'+port);
     });
     this.server = app;
   }
