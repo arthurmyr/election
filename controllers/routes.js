@@ -1,6 +1,7 @@
 var express = require('express'),
     path = require('path'),
-    bodyParser = require('body-parser');
+    bodyParser = require('body-parser'),
+    appDir = path.dirname(require.main.filename);
 
 
 
@@ -8,19 +9,19 @@ module.exports = function(app){
   var server = app.drivers.express.server,
   mysql = app.drivers.mysql;
 
-  server.use('/', express.static(path.resolve('views/assets')));
+  server.use('/', express.static(appDir+'/views/assets'));
   server.use(bodyParser.urlencoded({ extended: false }));
 
   // Site Routes
   server
   .get('/vote', function(req, res){
-    res.sendFile(path.resolve('views/vote.html'));
+    res.sendFile(appDir+'/views/vote.html');
   })
   .get('/signup', function(req, res){
-    res.sendFile(path.resolve('views/signup.html'));
+    res.sendFile(appDir+'/views/signup.html');
   })
   .get('/chart', function(req, res){
-    res.sendFile(path.resolve('views/chart.html'));
+    res.sendFile(appDir+'/views/chart.html');
   });
 
   // API Routes
